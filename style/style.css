@@ -2,6 +2,10 @@
     margin: 20px auto 10px auto;
 }
 
+.text{
+  display: none;
+}
+
 @media screen and (max-width: 699px){
   .wrapper {
       width: 80%;
