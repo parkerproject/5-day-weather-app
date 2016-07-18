@@ -1,6 +1,4 @@
-# ReduxSimpleStarter
-
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+# 5-day weather app
 
 ###Getting Started###
 
@@ -10,10 +8,10 @@ There are two methods for getting started with this repo.
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
+	> git clone git@github.com:parkerproject/5-day-weather-app.git
+	> cd 5-day-weather-app
 	> npm install
-	> npm start
+	> npm run dev
 ```
 
 ####Not Familiar with Git?#####
@@ -21,5 +19,5 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 
 ```
 	> npm install
-	> npm start
+	> npm run dev
 ```

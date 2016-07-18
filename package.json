@@ -1,15 +1,18 @@
 {
-  "name": "redux-simple-starter",
+  "name": "5-day-weather-app",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "Simple 5-day weather app",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "git@github.com:parkerproject/5-day-weather-app.git",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
     "postinstall": "webpack -p",
     "start": "node server.js"
+  },
+  "engines": {
+    "node": "6.3.0"
   },
   "author": "",
   "license": "ISC",
