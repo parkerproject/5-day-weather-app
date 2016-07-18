@@ -7,6 +7,9 @@
       width: 80%;
       margin: 10px;
   }
+  .text{
+    display: block;
+  }
 }
 
 h5{

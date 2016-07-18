@@ -55,6 +55,7 @@ class WeatherList extends Component {
           {cityData}
         </tbody>
       </table>
+      <small className='text'>Scroll to view temperatures</small>
     </div>
     )
   }
