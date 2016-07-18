@@ -36,24 +36,26 @@ class WeatherList extends Component {
   render () {
     let cityData = this.props.weather.city ? this.renderWeather(this.props.weather) : ''
     return (
-    <table className='table'>
-      <thead>
-        <tr>
-          <th>
-            Temperature (c)
-          </th>
-          <th>
-            Pressure (hpa)
-          </th>
-          <th>
-            Humidity (%)
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {cityData}
-      </tbody>
-    </table>
+    <div className='table-responsive'>
+      <table className='table'>
+        <thead>
+          <tr>
+            <th>
+              Temperature (c)
+            </th>
+            <th>
+              Pressure (hpa)
+            </th>
+            <th>
+              Humidity (%)
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {cityData}
+        </tbody>
+      </table>
+    </div>
     )
   }
 }
