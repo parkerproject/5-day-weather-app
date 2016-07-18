@@ -1,8 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
 
 class SearchForm extends Component {
+  static PropTypes = {
+  fetchWeather: PropTypes.func,
+ }
+
   componentDidMount () {
     const places = require('places.js')
     let placesAutocomplete = places({

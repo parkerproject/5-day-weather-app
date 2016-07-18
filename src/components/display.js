@@ -4,7 +4,9 @@ import { connect } from 'react-redux'
 
 const Display = (props) => {
   if (!props.weather) {
-    return <div class="loading"></div>
+    return <div>
+             Loading
+           </div>
   }
 
   let cityName = props.weather.weather ? props.weather.weather.city.name : '...'
@@ -12,9 +14,9 @@ const Display = (props) => {
 
   return (
   <div>
-    <h4>5-day average weather forecast for<small className='label'>{cityName}</small></h4>
+    <h5>5-day average weather forecast for <label> {cityName} </label></h5>
     <div className='container'>
-      <div className='columns'>
+      <div className='row'>
         <div className='column col-xs-12 col-sm-12 col-md-6'>
           <Weather weather={weatherList} />
         </div>
@@ -22,6 +24,10 @@ const Display = (props) => {
     </div>
   </div>
   )
+}
+
+Display.propTypes = { // props validation needed
+  weather: React.PropTypes.object
 }
 
 function mapStateToProps () {

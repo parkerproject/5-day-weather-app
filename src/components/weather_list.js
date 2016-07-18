@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
 import Chart from './chart'
 
 class WeatherList extends Component {
+  static PropTypes = {
+  weather: PropTypes.object,
+ }
+
   constructor (props) {
     super(props)
   }
@@ -32,7 +36,7 @@ class WeatherList extends Component {
   render () {
     let cityData = this.props.weather.city ? this.renderWeather(this.props.weather) : ''
     return (
-    <table>
+    <table className='table'>
       <thead>
         <tr>
           <th>
@@ -53,6 +57,7 @@ class WeatherList extends Component {
     )
   }
 }
+
 
 function mapStateToProps (state) {
   return {}
