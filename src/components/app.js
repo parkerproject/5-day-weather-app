@@ -8,11 +8,13 @@ class App extends Component {
   static PropTypes = {
   weather: PropTypes.object,
  }
+
+
   render () {
     return (
     <div className='wrapper'>
       <SearchForm />
-      <Display weather={this.props.weather} />
+      <Display weather={this.props.weather}/>
     </div>
     )
   }

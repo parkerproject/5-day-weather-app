@@ -17,9 +17,52 @@
 }
 
 h5{
-  margin: 40px 0 10px 0;
+  margin: 40px 0 10px 14px;
 }
 
 label{
   border-bottom: 2px dashed;
+}
+
+.temp{
+ font-size: 64px;
+ color: black
+}
+
+.temp sup{
+  font-size: 13px;
+}
+
+.day{
+  margin: 2em 0 0 0;
+  color: #888;
+}
+
+.day:hover{
+  cursor: pointer;
+}
+
+.day-img{
+  display: block;
+  margin: 0 auto;
+}
+
+.time .col-md-1{
+  cursor: pointer;
+  color: #888;
+  font-size: 10px;
+}
+
+.chart{
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 1em auto 2em auto;
+}
+
+.clouds{
+  text-transform: capitalize;
+}
+
+.deck{
+  padding: 2em 0;
 }
