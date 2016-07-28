@@ -40,7 +40,7 @@ describe('App', function () {
     expect(wrapper.find(Display)).to.have.length(1)
   })
 
-  it('should have props for weather', function () {
+  it('should have props.weather', function () {
     const wrapper = shallow(<App store={store} />)
     expect(wrapper.props().weather).to.be.defined
   })
